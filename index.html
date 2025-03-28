@@ -23,10 +23,9 @@
             position: relative;
         }
         .logo {
-            width: 50%;
+            width: 120px; /* Tamanho fixo para desktop */
             opacity: 0.4;
             margin-bottom: -10px;
-            margin-left: 5%;
         }
         .title {
             font-family: 'Marcellus', cursive;
@@ -41,6 +40,22 @@
         .footer {
             margin-top: 30px;
             font-size: 16px;
+        }
+
+        /* Ajuste para telas menores */
+        @media (max-width: 600px) {
+            .logo {
+                width: 180px; /* Aumenta o tamanho da logo no mobile */
+            }
+            .title {
+                font-size: 36px; /* Ajusta para ficar mais proporcional */
+            }
+            .date {
+                font-size: 22px;
+            }
+            .footer {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
