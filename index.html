@@ -14,22 +14,21 @@
             padding: 50px;
         }
         .container {
-            max-width: 600px;
-            margin: auto;
+            max-width: 90%;
+            width: 700px;
             background: #fff;
-            padding: 40px;
-            border-radius: 15px;
+            padding: 60px 50px;
+            border-radius: 20px;
             box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
-            position: relative;
+            margin: auto;
         }
         .logo {
-            width: 50%; /* Tamanho fixo para desktop */
+            width: 50%;
             opacity: 0.6;
-            margin-bottom: -10px;
-            padding-left: 5%;
+            display: block;
+            margin: 0 auto 20px auto;
         }
         .title {
-            font-family: 'Marcellus', cursive;
             font-size: 48px;
             margin-bottom: 10px;
         }
@@ -45,11 +44,15 @@
 
         /* Ajuste para telas menores */
         @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 50px 30px;
+            }
             .logo {
-                width: 245px; /* Aumenta o tamanho da logo no mobile */
+                width: 60%;
             }
             .title {
-                font-size: 36px; /* Ajusta para ficar mais proporcional */
+                font-size: 36px;
             }
             .date {
                 font-size: 22px;
