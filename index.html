@@ -32,11 +32,13 @@
             border-radius: 20px;
             box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
-            height: 90vh; /* Usa 90% da altura da tela */
+            min-height: 80vh; /* Reduz um pouco para não colar no fundo */
+            max-height: 90vh; /* Evita que a borda inferior perca o arredondamento */
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
+
 
         .logo {
             width: 50%;
