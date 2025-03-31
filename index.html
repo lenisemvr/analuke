@@ -6,17 +6,24 @@
     <title>Save the Date</title>
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             background-color: #c6c5b9;
             text-align: center;
             font-family: 'Marcellus', serif;
             color: #28322a;
-            padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh; /* Garante que ocupa toda a tela sem scroll */
+            overflow: hidden; /* Impede qualquer scroll */
         }
+
         .container {
             max-width: 600px;
             width: 95%;
@@ -25,27 +32,31 @@
             border-radius: 20px;
             box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
-            min-height: 85vh; /* Garante mais branco em cima e embaixo */
+            height: 90vh; /* Usa 90% da altura da tela */
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
+
         .logo {
-            width: 50%; /* Mantém o tamanho original do Fusca no desktop */
+            width: 50%;
             max-width: 100%;
             opacity: 0.6;
             display: block;
             margin: 0 auto;
         }
+
         .title {
             font-size: 48px;
             margin-bottom: 10px;
         }
+
         .date {
             font-size: 24px;
             font-style: italic;
             margin-top: 10px;
         }
+
         .footer {
             margin-top: 30px;
             font-size: 20px;
@@ -53,23 +64,24 @@
 
         /* Ajuste para telas menores */
         @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
             .container {
                 width: 98%;
                 padding: 30px;
-                min-height: 90vh; /* Mais branco ainda no mobile */
+                height: 95vh; /* Usa mais espaço da tela no mobile */
             }
+
             .logo {
-                width: 245px; /* Mantém o Fusca grande no mobile */
+                width: 245px;
             }
+
             .title {
                 font-size: 36px;
             }
+
             .date {
                 font-size: 22px;
             }
+
             .footer {
                 font-size: 16px;
             }
