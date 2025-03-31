@@ -20,7 +20,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Garante que ocupa toda a tela sem scroll */
+            height: 100vh;
             overflow: hidden; /* Impede qualquer scroll */
         }
 
@@ -32,12 +32,11 @@
             border-radius: 20px;
             box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
-            min-height: 70vh; /* Reduz um pouco para não colar no fundo */
+            min-height: 70vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between; /* Garante que o conteúdo fique distribuído */
         }
-
 
         .logo {
             width: 50%;
@@ -68,7 +67,7 @@
             .container {
                 width: 98%;
                 padding: 30px;
-                height: 95vh; /* Usa mais espaço da tela no mobile */
+                min-height: 90vh;
             }
 
             .logo {
