@@ -11,7 +11,7 @@
             text-align: center;
             font-family: 'Marcellus', serif;
             color: #28322a;
-            padding: 50px;
+            padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,7 +19,7 @@
         }
         .container {
             max-width: 600px;
-            width: 90%;
+            width: 95%;
             background: #fff;
             padding: 50px;
             border-radius: 20px;
@@ -27,11 +27,11 @@
             text-align: center;
         }
         .logo {
-            width: 50%;  /* Tamanho fixo para manter o Fusca grande */
+            width: 50%;  /* Mantém o tamanho original do Fusca no desktop */
             max-width: 100%;
             opacity: 0.6;
             display: block;
-            margin: 0 auto; /* Centraliza corretamente */
+            margin: 0 auto;
         }
         .title {
             font-size: 48px;
@@ -49,12 +49,15 @@
 
         /* Ajuste para telas menores */
         @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
             .container {
-                width: 95%;
-                padding: 40px;
+                width: 98%;
+                padding: 30px;
             }
             .logo {
-                width: 245px; /* Mantém o tamanho do Fusca no mobile */
+                width: 245px; /* Mantém o Fusca grande no mobile */
             }
             .title {
                 font-size: 36px;
