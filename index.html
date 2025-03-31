@@ -25,9 +25,13 @@
             border-radius: 20px;
             box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
+            min-height: 85vh; /* Garante mais branco em cima e embaixo */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .logo {
-            width: 50%;  /* Mantém o tamanho original do Fusca no desktop */
+            width: 50%; /* Mantém o tamanho original do Fusca no desktop */
             max-width: 100%;
             opacity: 0.6;
             display: block;
@@ -55,6 +59,7 @@
             .container {
                 width: 98%;
                 padding: 30px;
+                min-height: 90vh; /* Mais branco ainda no mobile */
             }
             .logo {
                 width: 245px; /* Mantém o Fusca grande no mobile */
