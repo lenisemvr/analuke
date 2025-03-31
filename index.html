@@ -12,21 +12,25 @@
             font-family: 'Marcellus', serif;
             color: #28322a;
             padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
-            max-width: 90%;
-            width: 700px;
+            max-width: 600px;
+            width: 90%;
             background: #fff;
-            padding: 60px 50px;
+            padding: 50px;
             border-radius: 20px;
             box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
-            margin: auto;
+            text-align: center;
         }
         .logo {
-            width: 50%;
+            width: 50%;  /* Mantém o tamanho original */
             opacity: 0.6;
             display: block;
-            margin: 0 auto 20px auto;
+            margin: 0 auto; /* Centraliza corretamente */
         }
         .title {
             font-size: 48px;
@@ -46,10 +50,10 @@
         @media (max-width: 600px) {
             .container {
                 width: 95%;
-                padding: 50px 30px;
+                padding: 40px;
             }
             .logo {
-                width: 60%;
+                width: 55%;
             }
             .title {
                 font-size: 36px;
